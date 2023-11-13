@@ -33,15 +33,10 @@
 html,
 body {
 	height: 100%;
-	font-family: "Cairo", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
 
-.logo{
-	height: 50px;
-	width: 60px;
-}
 
 h1,
 h2,
@@ -52,7 +47,6 @@ h6 {
 	margin: 0;
 	color: #111111;
 	font-weight: 400;
-	font-family: "Cairo", sans-serif;
 }
 
 h1 {
@@ -81,16 +75,28 @@ h6 {
 
 p {
 	font-size: 16px;
-	font-family: "Cairo", sans-serif;
 	color: #6f6f6f;
 	font-weight: 400;
 	line-height: 26px;
 	margin: 0 0 15px 0;
 }
-
+ 
 img {
 	max-width: 100%;
+} 
+
+img.logo-x{
+	height: 100px;
+	width: 150px;
 }
+
+.logo-x-div{
+	width: 200px;
+	height: 60;
+	position: relative;
+	float: right;
+}
+
 
 input:focus,
 select:focus,
@@ -134,7 +140,7 @@ ol {
 	right: 0;
 	height: 4px;
 	width: 80px;
-	background: #7fad39;
+	background: #fdd600;
 	content: "";
 	margin: 0 auto;
 }
@@ -170,9 +176,9 @@ ol {
 	font-size: 14px;
 	padding: 10px 28px 10px;
 	color: #ffffff;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 700;
-	background: #7fad39;
+	background: #fdd600;
 	letter-spacing: 2px;
 }
 
@@ -180,10 +186,10 @@ ol {
 	font-size: 14px;
 	color: #ffffff;
 	font-weight: 800;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	display: inline-block;
 	padding: 13px 30px 12px;
-	background: #7fad39;
+	background: #fdd600;
 	border: none;
 }
 
@@ -413,7 +419,7 @@ ol {
 }
 
 .header__logo {
-	padding: 15px 0;
+	padding: 0px 0;
 }
 
 .header__logo a {
@@ -454,7 +460,7 @@ ol {
 }
 
 .header__menu ul li .header__menu__dropdown li:hover>a {
-	color: #7fad39;
+	color: #fdd600;
 }
 
 .header__menu ul li .header__menu__dropdown li a {
@@ -465,7 +471,7 @@ ol {
 }
 
 .header__menu ul li.active a {
-	color: #7fad39;
+	color: #fdd600;
 }
 
 .header__menu ul li:hover .header__menu__dropdown {
@@ -475,7 +481,7 @@ ol {
 }
 
 .header__menu ul li:hover>a {
-	color: #7fad39;
+	color: #fdd600;
 }
 
 .header__menu ul li:last-child {
@@ -485,7 +491,7 @@ ol {
 .header__menu ul li a {
 	font-size: 14px;
 	color: #252525;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 700;
 	letter-spacing: 2px;
 	-webkit-transition: all, 0.3s;
@@ -529,7 +535,7 @@ ol {
 .header__cart ul li a span {
 	height: 13px;
 	width: 13px;
-	background: #7fad39;
+	background: #fdd600;
 	font-size: 10px;
 	color: #ffffff;
 	line-height: 13px;
@@ -592,7 +598,7 @@ ol {
 }
 
 .hero__categories__all {
-	background: #7fad39;
+	background: #fdd600;
 	position: relative;
 	padding: 10px 25px 10px 40px;
 	cursor: pointer;
@@ -615,7 +621,6 @@ ol {
 	right: 18px;
 	top: 9px;
 	content: "3";
-	font-family: "ElegantIcons";
 	font-size: 18px;
 	color: #ffffff;
 }
@@ -705,7 +710,7 @@ ol {
 
 .hero__search__phone__icon {
 	font-size: 18px;
-	color: #7fad39;
+	color: #fdd600;
 	height: 50px;
 	width: 50px;
 	background: #f5f5f5;
@@ -740,10 +745,10 @@ ol {
 
 .hero__text span {
 	font-size: 14px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 700;
 	letter-spacing: 4px;
-	color: #7fad39;
+	color: #fdd600;
 }
 
 .hero__text h2 {
@@ -780,7 +785,7 @@ ol {
 	font-size: 18px;
 	color: #1c1c1c;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: 2px;
 	padding: 12px 0 10px;
 	background: #ffffff;
@@ -845,7 +850,7 @@ ol {
 	bottom: -2px;
 	width: 100%;
 	height: 2px;
-	background: #7fad39;
+	background: #fdd600;
 	content: "";
 	opacity: 0;
 }
@@ -893,8 +898,8 @@ ol {
 }
 
 .featured__item__pic__hover li:hover a {
-	background: #7fad39;
-	border-color: #7fad39;
+	background: #fdd600;
+	border-color: #fdd600;
 }
 
 .featured__item__pic__hover li:hover a i {
@@ -1329,8 +1334,8 @@ ol {
 }
 
 .product__item__pic__hover li:hover a {
-	background: #7fad39;
-	border-color: #7fad39;
+	background: #fdd600;
+	border-color: #fdd600;
 }
 
 .product__item__pic__hover li:hover a i {
@@ -1528,7 +1533,7 @@ ol {
 }
 
 .filter__option span:hover {
-	color: #7fad39;
+	color: #fdd600;
 }
 
 .product__item {
@@ -1569,8 +1574,8 @@ ol {
 }
 
 .product__item__pic__hover li:hover a {
-	background: #7fad39;
-	border-color: #7fad39;
+	background: #fdd600;
+	border-color: #fdd600;
 }
 
 .product__item__pic__hover li:hover a i {
@@ -1650,8 +1655,8 @@ ol {
 
 .product__pagination a:hover,
 .blog__pagination a:hover {
-	background: #7fad39;
-	border-color: #7fad39;
+	background: #fdd600;
+	border-color: #fdd600;
 	color: #ffffff;
 }
 
@@ -2159,8 +2164,8 @@ ol {
 }
 
 .checkout__input__checkbox label input:checked~.checkmark {
-	background: #7fad39;
-	border-color: #7fad39;
+	background: #fdd600;
+	border-color: #fdd600;
 }
 
 .checkout__input__checkbox label input:checked~.checkmark:after {
@@ -2324,7 +2329,7 @@ ol {
 	display: inline-block;
 	font-size: 14px;
 	color: #1c1c1c;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: 1px;
 	border: 1px solid #b2b2b2;
 	padding: 14px 20px 12px;
@@ -2387,7 +2392,7 @@ ol {
 }
 
 .blog__sidebar__item ul li a:hover {
-	color: #7fad39;
+	color: #fdd600;
 }
 
 .blog__sidebar__search {
@@ -2456,7 +2461,7 @@ ol {
 .blog__sidebar__recent__item__text span {
 	font-size: 12px;
 	color: #999999;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .blog__sidebar__item__tags a {
@@ -2607,7 +2612,7 @@ ol {
 }
 
 .blog__details__widget .blog__details__social a:hover {
-	color: #7fad39;
+	color: #fdd600;
 }
 
 .blog__details__widget .blog__details__social a:last-child {
@@ -2725,7 +2730,7 @@ ol {
 }
 
 .footer__widget .footer__widget__social a:hover {
-	background: #7fad39;
+	background: #fdd600;
 	color: #ffffff;
 	border-color: #ffffff;
 }
@@ -2763,7 +2768,7 @@ ol {
 
 .contact__widget span {
 	font-size: 36px;
-	color: #7fad39;
+	color: #fdd600;
 }
 
 .contact__widget h4 {
@@ -2802,7 +2807,7 @@ ol {
 
 .map .map-inside i {
 	font-size: 48px;
-	color: #7fad39;
+	color: #fdd600;
 	position: absolute;
 	bottom: -75px;
 	left: 50%;
@@ -3059,7 +3064,7 @@ ol {
 	.humberger__menu__cart ul li a span {
 		height: 13px;
 		width: 13px;
-		background: #7fad39;
+		background: #fdd600;
 		font-size: 10px;
 		color: #ffffff;
 		line-height: 13px;
@@ -3125,7 +3130,7 @@ ol {
 		-webkit-border-radius: 0;
 		border-radius: 0;
 		background: transparent;
-		color: #7fad39;
+		color: #fdd600;
 	}
 	.humberger__menu__wrapper .slicknav_nav .slicknav_row,
 	.humberger__menu__wrapper .slicknav_nav a {
@@ -3317,7 +3322,7 @@ ol {
 	.humberger__menu__cart ul li a span {
 		height: 13px;
 		width: 13px;
-		background: #7fad39;
+		background: #fdd600;
 		font-size: 10px;
 		color: #ffffff;
 		line-height: 13px;
@@ -3383,7 +3388,7 @@ ol {
 		-webkit-border-radius: 0;
 		border-radius: 0;
 		background: transparent;
-		color: #7fad39;
+		color: #fdd600;
 	}
 	.humberger__menu__wrapper .slicknav_nav .slicknav_row,
 	.humberger__menu__wrapper .slicknav_nav a {
