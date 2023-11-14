@@ -600,7 +600,7 @@ ol {
 .hero__categories__all {
 	background: #fdd600;
 	position: relative;
-	padding: 10px 25px 10px 40px;
+	padding: 10px 15px 10px 15px;
 	cursor: pointer;
 }
 
@@ -620,7 +620,7 @@ ol {
 	position: absolute;
 	right: 18px;
 	top: 9px;
-	content: "3";
+	/* content: "3"; */
 	font-size: 18px;
 	color: #ffffff;
 }
