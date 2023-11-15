@@ -471,7 +471,7 @@ ol {
 }
 
 .header__menu ul li.active a {
-	color: #fdd600;
+	color: #ffaa00;
 }
 
 .header__menu ul li:hover .header__menu__dropdown {
@@ -489,7 +489,7 @@ ol {
 }
 
 .header__menu ul li a {
-	font-size: 14px;
+	font-size: 16px;
 	color: #252525;
 	/* text-transform: uppercase; */
 	font-weight: 700;
@@ -549,7 +549,7 @@ ol {
 }
 
 .header__cart .header__cart__price {
-	font-size: 14px;
+	font-size: 16px;
 	color: #6f6f6f;
 	display: inline-block;
 }
