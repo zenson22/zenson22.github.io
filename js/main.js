@@ -221,4 +221,84 @@
         $button.parent().find('input').val(newVal);
     });
 
+    // Add this JavaScript code
+    $(document).ready(function() {
+        $('.hero__categories ul li').hover(function() {
+            $(this).find('.sub-menu').show();
+        }, function() {
+            $(this).find('.sub-menu').hide();
+        });
+    });
+
+    $(document).ready(function() {
+        // Thêm icon mũi tên cho các mục có submenu
+        $('.hero__categories ul li').each(function() {
+            if($(this).find('.sub-menu').length > 0) {
+                $(this).append('<i class="fa fa-angle-right" style="float:right;margin-top:3px"></i>');
+            }
+        });
+
+        // Xử lý hover effect mượt mà
+        $('.hero__categories ul li').hover(
+            function() {
+                $(this).find('.sub-menu').first().stop(true, true).show();
+            },
+            function() {
+                $(this).find('.sub-menu').first().stop(true, true).hide();
+            }
+        );
+    });
+
 })(jQuery);
+
+// Add this to your existing main.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Load menu component
+    fetch('/components/menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelectorAll('.hero__categories > ul').forEach(element => {
+                element.innerHTML = data;
+            });
+        });
+
+    // Handle submenu hover
+    document.querySelectorAll('.hero__categories ul li').forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            const submenu = this.querySelector('.sub-menu');
+            if(submenu) {
+                submenu.style.display = 'block';
+            }
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            const submenu = this.querySelector('.sub-menu');
+            if(submenu) {
+                submenu.style.display = 'none';
+            }
+        });
+    });
+});
+
+$(document).ready(function() {
+    // Load header menu
+    $.ajax({
+        url: 'components/header-menu.html',
+        method: 'GET',
+        success: function(data) {
+            $('.header__menu ul').html(data);
+            
+            // Highlight active menu
+            let currentPage = window.location.pathname.split("/").pop() || 'index.html';
+            $('.header__menu ul li').each(function() {
+                let link = $(this).find('a').attr('href').replace('./', '');
+                if (link === currentPage) {
+                    $(this).addClass('active');
+                }
+            });
+        },
+        error: function(xhr, status, error) {
+            console.error("Error loading menu:", error);
+        }
+    });
+});
