@@ -221,6 +221,35 @@
         $button.parent().find('input').val(newVal);
     });
 
+    // Add this JavaScript code
+    $(document).ready(function() {
+        $('.hero__categories ul li').hover(function() {
+            $(this).find('.sub-menu').show();
+        }, function() {
+            $(this).find('.sub-menu').hide();
+        });
+    });
+
+    // $(document).ready(function() {
+    //     // Thêm icon mũi tên cho các mục có submenu
+    //     $('.hero__categories ul li').each(function() {
+    //         if($(this).find('.sub-menu').length > 0) {
+    //             $(this).append('<i class="fa fa-angle-right" style="float:right;margin-top:3px"></i>');
+    //         }
+    //     });
+
+    //     // Xử lý hover effect mượt mà
+    //     $('.hero__categories ul li').hover(
+    //         function() {
+    //             $(this).find('.sub-menu').first().stop(true, true).show();
+    //         },
+    //         function() {
+    //             $(this).find('.sub-menu').first().stop(true, true).hide();
+    //         }
+    //     );
+    // });
+
+
 })(jQuery);
 // Add this to your existing main.js
 document.addEventListener('DOMContentLoaded', function() {
